@@ -1,88 +1,36 @@
 ---
-layout: page
+layout: default
+section: blog
 ---
-{% include JB/setup %}
 
-<div class="content">
-  <div class="row">
-
-    <div class="bs-example">
-      <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-      <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
-       <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="active item">
-                <img src="../img/pages/slide.jpg" alt="">
-                <h2>Slide 1</h2>
-                <div class="carousel-caption">
-                  <h3>First slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../img/pages/slide.jpg" alt="">
-                <h2>Slide 2</h2>
-                <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../img/pages/slide.jpg" alt="">
-                <h2>Slide 3</h2>
-                <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </div>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <ul class="header col s12 light">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+      </div>
     </div>
-    </div>
-
-    <div class="col-xs-4">
-      <h4>RUBIÃO fitava a enseada,</h4>
-      <p>— eram oito horas da manhã. Quem o visse, com os polegares metidos no cordão do chambre, à janela de uma grande casa de Botafogo, cuidaria que ele admirava aquele pedaço de água quieta; mas, em verdade, vos digo que pensava em outra coisa. Cotejava o passa do com o presente. Que era, há um ano? Professor. Que é agora? Capitalista! Olha para si, para as chinelas (umas chinelas de Túnis, que lhe deu recente amigo, Cristiano Palha), </p>
-    </div>
-    <div class="col-xs-4">
-      <h4>RUBIÃO fitava a enseada,</h4>
-      <p>— eram oito horas da manhã. Quem o visse, com os polegares metidos no cordão do chambre, à janela de uma grande casa de Botafogo, cuidaria que ele admirava aquele pedaço de água quieta; mas, em verdade, vos digo que pensava em outra coisa. Cotejava o passa do com o presente. Que era, há um ano? Professor. Que é agora? Capitalista! Olha para si, para as chinelas (umas chinelas de Túnis, que lhe deu recente amigo, Cristiano Palha), </p>
-    </div>
-    <div class="col-xs-4">
-      <h4>RUBIÃO fitava a enseada,</h4>
-      <p>— eram oito horas da manhã. Quem o visse, com os polegares metidos no cordão do chambre, à janela de uma grande casa de Botafogo, cuidaria que ele admirava aquele pedaço de água quieta; mas, em verdade, vos digo que pensava em outra coisa. Cotejava o passa do com o presente. Que era, há um ano? Professor. Que é agora? Capitalista! Olha para si, para as chinelas (umas chinelas de Túnis, que lhe deu recente amigo, Cristiano Palha), </p>
-    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="row">
-    <div class="col-xs-12">
-      <h3>Bonita canoa! </h3>
-      <h4>— Antes assim! — Como obedece bem aos remos do homem! — O certo é que eles estão no céu! </h4>
-      <p>UM CRIADO  trouxe o café. Rubião pegou na xícara e, enquanto lhe deitava açúcar, ia disfarçadamente mirando a bandeja, que era de prata lavrada. Prata, ouro, eram os metais que amava de coração; não gostava de bronze, mas o amigo Palha disse-lhe que era matéria de preço, e assim se explica este par de figuras que aqui está na sala, um Mefelistófeles e um Fausto. Tivesse, porém, de escolher, escolheria a bandeja,- primor de argentaria, execução fina e acabada. O criado esperava teso e sério.</p>
-    </div>
-    <div class="col-xs-12">
-      <h3>Era espanhol; e não foi sem resistência que Rubião </h3>
-      <h4>o aceitou das mãos de Cristiano;</h4>
-      <p>por mais que lhe dissesse que estava acostumado aos seus crioulos de Minas, e não queria línguas estrangeiras em casa, o amigo Palha insistiu, demonstrando-lhe a necessidade de ter criados brancos. Rubião cedeu com pena. O seu bom pajem, que ele queria pôr na sala, como um pedaço da província, nem o pôde deixar na cozinha, onde reinava um francês, foi degradado a outros serviços.</p>
-    </div>
-    <div class="col-xs-12">
-      <h3>ESTE QUINCAS BORBA,</h3>
-      <h4>se acaso me fizeste o favor de ler as Memórias Póstumas de Brás Cubas,</h4>
-      <p>é aquele mesmo náufrago da existência, que ali aparece, mendigo, herdeiro inopinado, e inventor de uma filosofia. Aqui o tens agora em Barbacena. Logo que chegou, enamorou-se de uma viúva, senhora de condição mediana e parcos meios de vida, mas, tão acanhada que os suspiros no namorado ficavam sem eco. Chamava-se Maria da Piedade. Um irmão dela, que é o  presente Rubião, fez todo o possível para casá-los. Piedade resistiu, um pleuris a levou.</p>
-    </div>
-  </div>
-  <div class="lead"></div>
+<div class='listing col6 pad4h margin3'>
+  {% for item in site.categories.blog limit:1000 %}
+    {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
+    {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
+
+    {% if date != ndate %}
+      <h4 class='month'>{{item.date | date: '%B %Y'}}</h4>
+    {% endif %}
+    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} <span class='date'>&#126; {{item.date | date:"%b %d"}}</span></a>
+  {% endfor %}
 </div>
 
-
+{% include rss-link.html %}

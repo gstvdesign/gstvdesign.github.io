@@ -1,0 +1,30 @@
+---
+layout: default
+section: blog
+---
+
+{% if page.splash %}
+  {% if page.splash contains 'http' %}
+    {% capture url %}{{page.splash}}{% endcapture %}
+  {% else %}
+    {% capture url %}{{site.baseurl}}{{page.splash}}/{% endcapture %}
+  {% endif %}
+
+  <div class="row">
+    <div class="col s12 center">
+      <img src='{{url}}' alt='' />
+    </div>
+  </div>
+{% endif %}
+
+<div class='col s12'>
+  <div class='heading'>
+    <h1>{{page.title}}</h1><span class='date'>{{page.date | date:"%b %d"}}</span>
+  </div>
+
+  <div class='col s12'>
+    {{content}}
+  </div>
+</div>
+
+{% include rss-link.html %}
