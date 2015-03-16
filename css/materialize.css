@@ -1684,8 +1684,7 @@ audio:not([controls]) {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background: transparent;
-  color: #8F9C6E; }
+  background: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -1956,7 +1955,7 @@ ul {
   list-style-type: none; }
 
 a {
-  color: #1E88E5;
+  color: #8F9C6E;;
   text-decoration: none; }
 
 .valign-wrapper {
