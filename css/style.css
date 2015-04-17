@@ -5,7 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-
+body{background-color: #f2ea3a;}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -46,4 +46,10 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: #591e5b;
 }
+footer h2, footer h4 {
+  color: #f2ea3a; }
+
+footer a:link, footer a:active{
+  color:#f2ea3a;}
