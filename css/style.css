@@ -6,13 +6,10 @@
  * Made By MaterializeCSS.com
  */
 body{background-color: #f2ea3a;}
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
 
 p {
   line-height: 2rem;
+  font-size: 18px;
 }
 
 .button-collapse {
@@ -51,5 +48,21 @@ footer.page-footer {
 footer h2, footer h4 {
   color: #f2ea3a; }
 
+footer a{
+transition: all 0.2s linear;}
+
 footer a:link, footer a:active{
-  color:#f2ea3a;}
+  color: rgba(255, 235, 59, 0.8);}
+
+footer a:hover{
+  color: rgba(255, 235, 59, 0.6);}
+
+header nav ul.hide-on-med-and-down {
+    min-height: 60px;
+    width: 100%;
+}
+
+header nav ul.hide-on-med-and-down li {
+    display: inline-flex;
+    float: none;
+}
